@@ -80,67 +80,63 @@ How does the else block take in the second parameter? Is it defining a function?
 
 11. For the following snippet, what gets logged to the console when the user clicks on “Button 4” and why? Provide one or more alternate implementations that will work as expected.
 
-`for (var i = 0; i < 5; i++) {
-  var btn = document.createElement('button');
-  btn.appendChild(document.createTextNode('Button ' + i));
-  btn.addEventListener('click', function(){ console.log(i); });
-  document.body.appendChild(btn);
-}`
+    for (var i = 0; i < 5; i++) {
+      var btn = document.createElement('button');
+      btn.appendChild(document.createTextNode('Button ' + i));
+      btn.addEventListener('click', function(){ console.log(i); });
+      document.body.appendChild(btn);
+    }
 
 12. What will the code below output to the console and why?
-`
+
     var arr1 = "john".split('');
     var arr2 = arr1.reverse();
     var arr3 = "jones".split('');
     arr2.push(arr3);
     console.log("array 1: length=" + arr1.length + " last=" + arr1.slice(-1));
     console.log("array 2: length=" + arr2.length + " last=" + arr2.slice(-1));
-`
+
 
 13. What will the code below output to the console and why?
 
-`console.log(1 +  "2" + "2");
-console.log(1 +  +"2" + "2");
-console.log(1 +  -"1" + "2");
-console.log(+"1" +  "1" + "2");
-console.log( "A" - "B" + "2");
-console.log( "A" - "B" + 2);`
+    console.log(1 +  "2" + "2");
+    console.log(1 +  +"2" + "2");
+    console.log(1 +  -"1" + "2");
+    console.log(+"1" +  "1" + "2");
+    console.log( "A" - "B" + "2");
+    console.log( "A" - "B" + 2);
 
 14. The following recursive code will cause a stack overflow if the array list is too large. How can you fix this and still retain the recursive pattern?
-`var list = readHugeList();
 
-var nextListItem = function() {
-    var item = list.pop();
-
-    if (item) {
-        // process the list item...
-        nextListItem();
-    }
-};`
+    var list = readHugeList();
+    var nextListItem = function() {
+        var item = list.pop();
+        if (item) {
+            // process the list item...
+            nextListItem();
+        }
+    };
 
 15. What is a “closure” in JavaScript? Provide an example.
 
 16. What would the following lines of code output to the console?
 
-`console.log("0 || 1 = "+(0 || 1));`
-`console.log("1 || 2 = "+(1 || 2));`
-`console.log("0 && 1 = "+(0 && 1));`
-`console.log("1 && 2 = "+(1 && 2));`
+    console.log("0 || 1 = "+(0 || 1));
+    console.log("1 || 2 = "+(1 || 2));
+    console.log("0 && 1 = "+(0 && 1));
+    console.log("1 && 2 = "+(1 && 2));
 
 17. What will be the output when the following code is executed? Explain.
 
-`console.log(false == '0')`
-`console.log(false === '0')`
+    console.log(false == '0')
+    console.log(false === '0')
 
 18. What is the output out of the following code? Explain your answer.
 
-`
     var a={},
         b={key:'b'},
         c={key:'c'};
-    
     a[b]=123;
     a[c]=456;
-    
     console.log(a[b]);
-`
+
