@@ -133,6 +133,7 @@ console.log(false === '0')
 18. What is the output out of the following code? Explain your answer.
 
 `
+    
     var a={},
     b={key:'b'},
     c={key:'c'};
