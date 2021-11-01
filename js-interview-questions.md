@@ -33,7 +33,7 @@
 
 1. What is the significance of, and reason for, wrapping the entire content of a JavaScript source file in a function block?
 
-> *...Another feature of this technique is to allow for an easily referenceable (presumably shorter) alias for a global variable. This is often used, for example, in jQuery plugins. jQuery allows you to disable the $ reference to the jQuery namespace, using jQuery.noConflict(). If this has been done, your code can still use $ employing this closure technique, as follows:* `(function($) { /* jQuery plugin code referencing $ */ } )(jQuery);` What does this mean?
+    > *...Another feature of this technique is to allow for an easily referenceable (presumably shorter) alias for a global variable. This is often used, for example, in jQuery plugins. jQuery allows you to disable the $ reference to the jQuery namespace, using jQuery.noConflict(). If this has been done, your code can still use $ employing this closure technique, as follows:* `(function($) { /* jQuery plugin code referencing $ */ } )(jQuery);` What does this mean?
 
 1. What is the significance, and what are the benefits, of including 'use strict' at the beginning of a JavaScript source file?
 
@@ -211,10 +211,10 @@
 
 1. Create a function that, given a DOM Element on the page, will visit the element itself and all of its descendents (not just its immediate children). For each element visited, the function should pass that element to a provided callback function.
 
-  The arguments to the function should be:
+    The arguments to the function should be:
 
-  - a DOM element
-  - a callback function (that takes a DOM element as its argument)
+    - a DOM element
+    - a callback function (that takes a DOM element as its argument)
 
 1. Testing your this knowledge in JavaScript: What is the output of the following code?
 
