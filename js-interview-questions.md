@@ -33,8 +33,8 @@
 
 1. What is the significance of, and reason for, wrapping the entire content of a JavaScript source file in a function block?
 
-*...Another feature of this technique is to allow for an easily referenceable (presumably shorter) alias for a global variable. This is often used, for example, in jQuery plugins. jQuery allows you to disable the $ reference to the jQuery namespace, using jQuery.noConflict(). If this has been done, your code can still use $ employing this closure technique, as follows:* `(function($) { /* jQuery plugin code referencing $ */ } )(jQuery);`
-What does this mean?
+  *...Another feature of this technique is to allow for an easily referenceable (presumably shorter) alias for a global variable. This is often used, for example, in jQuery plugins. jQuery allows you to disable the $ reference to the jQuery namespace, using jQuery.noConflict(). If this has been done, your code can still use $ employing this closure technique, as follows:* `(function($) { /* jQuery plugin code referencing $ */ } )(jQuery);`
+  What does this mean?
 
 1. What is the significance, and what are the benefits, of including 'use strict' at the beginning of a JavaScript source file?
 
@@ -214,10 +214,8 @@ What does this mean?
 
 The arguments to the function should be:
 
-    ```
-    - a DOM element
-    - a callback function (that takes a DOM element as its argument)
-    ```
+- a DOM element
+- a callback function (that takes a DOM element as its argument)
 
 1. Testing your this knowledge in JavaScript: What is the output of the following code?
 
@@ -255,14 +253,14 @@ The arguments to the function should be:
 
 1. What will be the output of this code?
 
-  ```javascript
-  var x = 21;
-  var girl = function () {
-      console.log(x);
-      var x = 20;
-  };
-  girl ();
-  ```
+    ```javascript
+    var x = 21;
+    var girl = function () {
+        console.log(x);
+        var x = 20;
+    };
+    girl ();
+    ```
 
 1. What will this code print?
 
@@ -282,8 +280,8 @@ The arguments to the function should be:
 1. How do you add an element at the begining of an array? How do you add one at the end?
 
 1. Imagine you have this code: `var a = [1,2,3];`
-_1 Will this result in a crash? `a[10] = 99;`
-_2 What will this output? `console.log(a[6]);`
+1.1. Will this result in a crash? `a[10] = 99;`
+1.1. What will this output? `console.log(a[6]);`
 
 1. What is the value of `typeof undefined == typeof NULL`?
 
