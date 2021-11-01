@@ -80,12 +80,12 @@ How does the else block take in the second parameter? Is it defining a function?
 
 11. For the following snippet, what gets logged to the console when the user clicks on “Button 4” and why? Provide one or more alternate implementations that will work as expected.
 
-    for (var i = 0; i < 5; i++) {
-      var btn = document.createElement('button');
-      btn.appendChild(document.createTextNode('Button ' + i));
-      btn.addEventListener('click', function(){ console.log(i); });
-      document.body.appendChild(btn);
-    }
+`for (var i = 0; i < 5; i++) {
+  var btn = document.createElement('button');
+  btn.appendChild(document.createTextNode('Button ' + i));
+  btn.addEventListener('click', function(){ console.log(i); });
+  document.body.appendChild(btn);
+}`
 
 12. What will the code below output to the console and why?
 
@@ -107,7 +107,6 @@ How does the else block take in the second parameter? Is it defining a function?
     console.log( "A" - "B" + 2);
 
 14. The following recursive code will cause a stack overflow if the array list is too large. How can you fix this and still retain the recursive pattern?
-
     var list = readHugeList();
     var nextListItem = function() {
         var item = list.pop();
@@ -128,17 +127,18 @@ How does the else block take in the second parameter? Is it defining a function?
 
 17. What will be the output when the following code is executed? Explain.
 
-    console.log(false == '0')
-    console.log(false === '0')
+console.log(false == '0')
+console.log(false === '0')
 
 18. What is the output out of the following code? Explain your answer.
-`
 
+`
     var a={},
-        b={key:'b'},
-        c={key:'c'};
+    b={key:'b'},
+    c={key:'c'};
+    
     a[b]=123;
     a[c]=456;
+    
     console.log(a[b]);
-
 `
