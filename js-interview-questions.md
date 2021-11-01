@@ -88,14 +88,17 @@ How does the else block take in the second parameter? Is it defining a function?
 }`
 
 12. What will the code below output to the console and why?
-`var arr1 = "john".split('');
-var arr2 = arr1.reverse();
-var arr3 = "jones".split('');
-arr2.push(arr3);
-console.log("array 1: length=" + arr1.length + " last=" + arr1.slice(-1));
-console.log("array 2: length=" + arr2.length + " last=" + arr2.slice(-1));`
+`
+    var arr1 = "john".split('');
+    var arr2 = arr1.reverse();
+    var arr3 = "jones".split('');
+    arr2.push(arr3);
+    console.log("array 1: length=" + arr1.length + " last=" + arr1.slice(-1));
+    console.log("array 2: length=" + arr2.length + " last=" + arr2.slice(-1));
+`
 
-13. What will the code below output to the console and why ?
+13. What will the code below output to the console and why?
+
 `console.log(1 +  "2" + "2");
 console.log(1 +  +"2" + "2");
 console.log(1 +  -"1" + "2");
