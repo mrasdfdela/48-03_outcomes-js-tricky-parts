@@ -99,7 +99,7 @@ What does this mean?
     }
     ```
 
-How does the else block take in the second parameter? Is it defining a function?
+    How does the else block take in the second parameter? Is it defining a function?
 
 1. For the following snippet, what gets logged to the console when the user clicks on “Button 4” and why? Provide one or more alternate implementations that will work as expected.
 
@@ -214,8 +214,10 @@ How does the else block take in the second parameter? Is it defining a function?
 
 The arguments to the function should be:
 
-  +. a DOM element
-  +. a callback function (that takes a DOM element as its argument)
+    ```
+    - a DOM element
+    - a callback function (that takes a DOM element as its argument)
+    ```
 
 1. Testing your this knowledge in JavaScript: What is the output of the following code?
 
@@ -248,5 +250,76 @@ The arguments to the function should be:
       }
       console.log(x);
       console.log(y);
-  })();
+    })();
+    ```
+
+1. What will be the output of this code?
+
+  ```javascript
+  var x = 21;
+  var girl = function () {
+      console.log(x);
+      var x = 20;
+  };
+  girl ();
+  ```
+
+1. What will this code print?
+
+    ```javascript
+    for (let i = 0; i < 5; i++) {
+      setTimeout(function() { console.log(i); }, i * 1000 );
+    }
+    ```
+
+1. What do the following lines output, and why?
+
+    ```javascript
+    console.log(1 < 2 < 3);
+    console.log(3 > 2 > 1);
+    ```
+
+1. How do you add an element at the begining of an array? How do you add one at the end?
+
+1. Imagine you have this code: `var a = [1,2,3];`
+_1 Will this result in a crash? `a[10] = 99;`
+_2 What will this output? `console.log(a[6]);`
+
+1. What is the value of `typeof undefined == typeof NULL`?
+
+1. What would following code return? `console.log(typeof typeof 1);`
+
+1. What will be the output of the following code:
+
+    ```javascript
+    for (var i = 0; i < 5; i++) {
+      setTimeout(function() { console.log(i); }, i * 1000 );
+    }
+    ```
+
+1. What is `NaN`? What is its type? How can you reliably test if a value is equal to `NaN`?
+
+1. What will the following code output and why?
+
+    ```javascript
+    var b = 1;
+    function outer(){
+        var b = 2
+        function inner(){
+            b++;
+            var b = 3;
+            console.log(b)
+        }
+        inner();
+    }
+    outer();
+    ```
+
+1. Discuss possible ways to write a function `isInteger(x)` that determines if `x` is an integer
+
+1. How do you clone an object?
+
+    ```javascript
+    var obj = {a: 1 ,b: 2}
+    var objclone = Object.assign({},obj);
     ```
