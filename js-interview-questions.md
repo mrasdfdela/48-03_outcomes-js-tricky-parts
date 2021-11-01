@@ -132,6 +132,7 @@ How does the else block take in the second parameter? Is it defining a function?
     console.log(false === '0')
 
 18. What is the output out of the following code? Explain your answer.
+`
 
     var a={},
         b={key:'b'},
@@ -140,3 +141,4 @@ How does the else block take in the second parameter? Is it defining a function?
     a[c]=456;
     console.log(a[b]);
 
+`
