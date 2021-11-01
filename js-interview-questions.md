@@ -132,14 +132,26 @@ console.log(false === '0')
 
 18. What is the output out of the following code? Explain your answer.
 
-`
     
     var a={},
-    b={key:'b'},
-    c={key:'c'};
+        b={key:'b'},
+        c={key:'c'};
     
     a[b]=123;
     a[c]=456;
     
     console.log(a[b]);
-`
+
+19. What will the following code output to the console:
+    
+    console.log((function f(n){return ((n > 1) ? n * f(n-1) : n)})(10));
+    
+20. Consider the code snippet below. What will the console output be and why?
+    
+    (function(x) {
+      return (function(y) {
+          console.log(x);
+      })(2)
+    })(1);
+    
+21. What will the following code output to the console and why:
